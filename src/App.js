@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+//import User from "./User";
 function App() {
+  // const students = ["Wajahat", "Kalyani", "Aniket", "Rajendra"];
+
+  // students.map((item) => {
+  //   console.log(item);
+  // });
+
+  const students = [
+    { name: "wajahat", email: "w@gmail.com", mobile: 927272 },
+    { name: "shaikh", email: "s@gmail.com", mobile: 111 },
+    { name: "Kalyani", email: "K@gmail.com", mobile: 222 },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Handle Array with List</h1>
+      {students.map((data) => 
+        <h1>Name is : {data.name}, {data.email},{data.mobile}</h1>
+      )}
     </div>
   );
 }
