@@ -12,14 +12,17 @@ function App() {
     { name: "wajahat", email: "w@gmail.com", mobile: 927272 },
     { name: "shaikh", email: "s@gmail.com", mobile: 111 },
     { name: "Kalyani", email: "K@gmail.com", mobile: 222 },
+    { name: "Kalyani", email: "K@gmail.com", mobile: 222 },
   ];
 
   return (
     <div className="App">
       <h1>Handle Array with List</h1>
-      {students.map((data) => 
-        <h1>Name is : {data.name}, {data.email},{data.mobile}</h1>
-      )}
+      {students.map((data) => (
+        <h1>
+          Name is : {data.name}, {data.email},{data.mobile}
+        </h1>
+      ))}
     </div>
   );
 }
